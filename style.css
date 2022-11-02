@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
+  color: #14142a;
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: #f5f5f5;
+}
+p,
+a {
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+h1 {
+  font-size: 2.3rem;
+}
+#cv {
+  display: none;
+}
+header {
+  background: white;
+  padding: 0 5rem;
+  height: 8rem;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.links a {
+  opacity: 1;
+  font-weight: 500;
+}
+main {
+  height: calc(100vh - 8rem);
+  display: flex;
+}
+button.btn {
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  background: #006eff;
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 600;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  margin: auto;
+  cursor: pointer;
+}
+.btn i {
+  color: white;
+  font-size: 3rem;
+}
+.typo {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+.typo h1 {
+  font-size: 5rem;
+  text-transform: capitalize;
+}
+.typo p {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+}
+.wraper {
+  background: white;
+  padding: 8rem;
+  min-height: 100vh;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.intro {
+  text-align: center;
+  background: #6464ff29;
+  padding: 3rem;
+}
+.intro .name {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+}
+.intro address {
+  font-size: 1.8rem;
+  font-style: normal;
+}
+.block {
+  margin: 3rem 0;
+}
+.title {
+  width: 100%;
+  border-bottom: 1px solid #14142a;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+.block-content {
+  margin: 2rem 0;
+}
+.block-content .info p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #14142aeb;
+}
+.info {
+  margin-bottom: 1rem;
+}
+.item {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+
+/* user input */
+.modal {
+  background: #00000044;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.user-inputs {
+  width: 50%;
+  background: white;
+  height: 90vh;
+  overflow-y: scroll;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5rem;
+  z-index: 99;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  resize: none;
+  font-size: 1.6rem;
+}
+
+[class*="-info"] {
+  margin: 2rem 0;
+}
+[class*="-info"] h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+[class*="-info"] .btn {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  background: #14142a;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.fild,
+textarea {
+  border: 1px solid #0000000f;
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+}
+textarea {
+  height: 15rem;
+}
+.genarate {
+  margin-top: 3rem;
+}

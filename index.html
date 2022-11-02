@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>C.V genarator</h1>
+        </div>
+        <div class="links">
+          <a href="#">Home</a>
+          <a href="#">Home</a>
+          <a href="#">Home</a>
+          <a href="#">Home</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="typo">
+          <h1>Genarate your C.V</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+            iusto autem tempore, voluptate recusandae nulla itaque maiores eius
+            est quibusdam magni! Omnis, corrupti quidem. Tempora perspiciatis
+            est voluptatum autem deleniti.
+          </p>
+          <button class="btn">
+            <i class="uil uil-file"></i> Genarate now!
+          </button>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="user-inputs">
+          <!-- Genaral info -->
+          <div class="genaral-info">
+            <h2>Genaral info</h2>
+            <div class="row">
+              <div class="fild">
+                <input class="fname" type="text" placeholder="First name" />
+              </div>
+              <div class="fild">
+                <input class="lname" type="text" placeholder="Last name" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="fild">
+                <input class="birthday" type="date" placeholder="Birthday date" />
+              </div>
+              <div class="fild">
+                <select class="gender">
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="fild">
+                <input class="city" type="text" placeholder="City" />
+              </div>
+              <div class="fild">
+                <input class="road" type="text" placeholder="Road no" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="fild">
+                <input class="zip" type="text" placeholder="zip code" />
+              </div>
+              <div class="fild">
+                <input class="country" type="text" placeholder="country" />
+              </div>
+            </div>
+            <textarea class="bio" placeholder="Your bio"></textarea>
+          </div>
+          <!-- Genaral info end -->
+
+          <!-- contact info -->
+          <div class="contact-info">
+            <h2>Contact info</h2>
+            <div class="inp-block">
+              <div class="row">
+                <div class="fild">
+                  <input class="email" type="email" placeholder="Email" />
+                </div>
+                <div class="fild">
+                  <input class="phone" type="tel" placeholder="Phone number" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- contact info end -->
+
+          <!-- education -->
+          <div class="education-info">
+            <h2>Education info</h2>
+          <div id="educationInfo">
+            <div class="inp-value education-info-count">
+              <div class="row">
+                <div class="fild">
+                  <input
+                    class="certificate[0]"
+                    type="text"
+                    placeholder="Certificate name"
+                  />
+                </div>
+                <div class="fild">
+                  <input
+                    class="school[0]"
+                    type="text"
+                    placeholder="School/College name"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="fild">
+                  <input
+                    class="s-year-from[0]"
+                    type="number"
+                    placeholder="Year from"
+                  />
+                </div>
+                <div class="fild">
+                  <input
+                    class="s-year-to[0]"
+                    type="number"
+                    placeholder="End year"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="fild">
+                  <input
+                    class="certificate-type[0]"
+                    type="text"
+                    placeholder="Certificate type"
+                  />
+                </div>
+                <div class="fild">
+                  <input class="gpa[0]" type="text" placeholder="G.P.A" />
+                </div>
+              </div>
+              <textarea
+                placeholder="Education description"
+                class="edu-des[0]"
+              ></textarea>
+            </div>
+          </div>
+            <button class="btn add-another" onclick="addAducationInfo()">Add more education info</button>
+          </div>
+          <!-- education end -->
+
+          <!-- Exparience -->
+          <div class="exparience-info">
+            <h2>Exparience info</h2>
+           <div id="exparienceInfo">
+            <div class="inp-block exparience-info-count">
+              <div class="row">
+                <div class="fild">
+                  <input
+                    type="text"
+                    class="institute[0]"
+                    placeholder="Institute name"
+                  />
+                </div>
+                <div class="fild">
+                  <input
+                    type="text"
+                    class="i-location[0]"
+                    placeholder="Institute location"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="fild">
+                  <input
+                    class="e-year-from[0]"
+                    type="number"
+                    placeholder="Year from"
+                  />
+                </div>
+                <div class="fild">
+                  <input
+                    class="e-year-to[0]"
+                    type="number"
+                    placeholder="Year to"
+                  />
+                </div>
+              </div>
+              <textarea
+                class="job-des[0]"
+                placeholder="Job description"
+              ></textarea>
+            </div>
+           </div>
+            <button class="btn add-another" onclick="addExparience()">Add more exparience info</button>
+          </div>
+          <!-- Exparience end -->
+
+          <!-- Language -->
+          <div class="lang-info">
+            <h2>Language</h2>
+          <div id="langInfo">
+            <div class="inp-block lang-info-count">
+              <div class="row">
+                <div class="fild">
+                  <input type="text" class="lang[0]" placeholder="Language name" />
+                </div>
+                <div class="fild">
+                  <select class="lang-level[0]">
+                    <option value="Native">Native</option>
+                    <option value="Fluent">Fluent</option>
+                    <option value="Intermidiet">Intermidiet</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+            <button class="btn add-another" onclick="addLanguage()">Add more lamguage info</button>
+          </div>
+          <!-- Language end -->
+          <button class="btn genarate" onclick="genarate()">
+            <i class="uil uil-file"></i> Genarate
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- <section id="cvTemplte">
+      <div class="container">
+        <div class="wraper">
+          <div class="intro">
+            <h1 class="name">Mehidi Hasan</h1>
+            <address>Addr, number - email</address>
+          </div>
+
+          <div class="block">
+            <h1 class="title">Profile</h1>
+            <div class="block-content">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum
+                amet aliquid ipsum eveniet voluptatem quia! Quisquam iure
+                delectus minima reprehenderit? Eius, accusantium. Consectetur
+                consequuntur nobis laudantium doloribus nam atque modi.
+              </p>
+            </div>
+          </div>
+
+          <div class="block">
+            <h1 class="title">Experience</h1>
+            <div class="block-content">
+              <div class="info">
+                <p>Job title (institute name)</p>
+                <p>Company name(institute location)</p>
+                <div class="duration">
+                  <p>2013 - Present</p>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum
+                amet aliquid ipsum eveniet voluptatem quia! Quisquam iure
+                delectus minima reprehenderit? Eius, accusantium. Consectetur
+                consequuntur nobis laudantium doloribus nam atque modi.
+              </p>
+            </div>
+          </div>
+          <div class="block">
+            <h1 class="title">Education</h1>
+            <div class="block-content">
+              <div class="info">
+                <p>Univercity name, Cirtificate name</p>
+                <p>Degree title (Certificate type)</p>
+                <p>GPA</p>
+                <div class="duration">
+                  <p>2013 - 2021</p>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum
+                amet aliquid ipsum eveniet voluptatem quia! Quisquam iure
+                delectus minima reprehenderit? Eius, accusantium. Consectetur
+                consequuntur nobis laudantium doloribus nam atque modi.
+              </p>
+            </div>
+          </div>
+
+          <div class="block">
+            <h1 class="title">Language</h1>
+            <div class="block-content">
+              <div class="item">
+                <p>English:</p>
+                <span>Native</span>
+              </div>
+              <div class="item">
+                <p>English:</p>
+                <span>Native</span>
+              </div>
+              <div class="item">
+                <p>English:</p>
+                <span>Native</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
